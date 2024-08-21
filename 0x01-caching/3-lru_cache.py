@@ -24,7 +24,7 @@ class LRUCache(BaseCaching):
         if len(self.cache_data) > BaseCaching.MAX_ITEMS:
             least_key = self.lru_list.pop(0)
             del self.cache_data[least_key]
-            print("DISCARD: {least_key}")
+            print(f'DISCARD: {least_key}')
 
     def get(self, key):
         """Retrieve the item by key from the cache"""

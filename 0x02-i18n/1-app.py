@@ -10,6 +10,8 @@ from flask_babel import Babel
 app = Flask(__name__)
 
 # Configure app with Config class
+
+
 class Config:
     """
     Configuration class for Flask app.
@@ -18,10 +20,13 @@ class Config:
     BABEL_DEFAULT_LOCALE = 'en'
     BABEL_DEFAULT_TIMEZONE = 'UTC'
 
+
 app.config.from_object(Config)
+
 
 # Instantiate Babel
 babel = Babel(app)
+
 
 @app.route('/')
 def index():
@@ -30,6 +35,7 @@ def index():
     :return: Rendered HTML template
     """
     return render_template('index.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True)

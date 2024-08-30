@@ -34,7 +34,7 @@ def index():
     Renders the index page with a welcome message.
     :return: Rendered HTML template
     """
-    return render_template('index.html')
+    return render_template('1-index.html')
 
 
 if __name__ == '__main__':

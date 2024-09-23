@@ -1,3 +1,4 @@
+#!/usr/bin/yarn dev
 import redis from 'redis';
 
 
